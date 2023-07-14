@@ -1,0 +1,29 @@
+<doctype html>
+<title>Edit Account - Python Flask MySQL CRUD</title>
+<h2>PayDM: Manage Your Account</h2>
+<hr/>
+<h2>Edit Account</h2>
+<form method="post" action="/update">
+    <dl>
+		<p>
+			<input name="inputid" value="{{ row['id'] }}" type="text" placeholder="id" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputname" value="{{ row['name'] }}" type="text" placeholder="name" autocomplete="off" required>
+		</p>
+		<p>
+			<input name="inputamount" value="{{ row['amount'] }}" type="text" placeholder="amount" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input name="id" value="{{ row['id'] }}" type="hidden">
+		<input type="submit" value="Submit">
+	</p>
+	<p>
+		<a href = "/">Back To Root</a>
+		
+	</p>
+</form>
+<br>
+<hr>
+Created By Rijusmit @2023
